@@ -40,6 +40,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: "target/Cerberus-${{ steps.version.outputs.version }}.jar"
-          asset_name: Cerberus-${{ steps.version.outputs.version }}.jar
+          asset_path: "target/${{ github.event.repository.name }}-${{ steps.version.outputs.version }}.jar"
+          asset_name: ${{ github.event.repository.name }}-${{ steps.version.outputs.version }}.jar
           asset_content_type: application/java-archive

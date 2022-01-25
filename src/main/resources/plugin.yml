@@ -1,0 +1,5 @@
+name: ArmourPermission
+version: '${project.version}'
+main: github.chriscn.armourpermission.ArmourPermission
+api-version: 1.18
+description: Control what armour your players can wear through permission
